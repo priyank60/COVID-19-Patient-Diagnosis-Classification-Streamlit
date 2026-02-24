@@ -6,19 +6,9 @@ import joblib
 st.set_page_config(page_title='Covid Risk Predictor',layout='centered')
 
 # loading model,scaler and columns
-import traceback
-
-try:
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-    model = joblib.load(os.path.join(BASE_DIR, '..', 'Pickel_files', 'logistic_model.pkl'))
-    scaler = joblib.load(os.path.join(BASE_DIR, '..', 'Pickel_files', 'scaler.pkl'))
-    columns = joblib.load(os.path.join(BASE_DIR, '..', 'Pickel_files', 'columns.pkl'))
-
-except Exception as e:
-    st.error("Model loading failed")
-    st.text(str(e))
-    st.text(traceback.format_exc())
+model = None
+scaler = None
+columns = None
 
 # Header
 st.title("🩺 COVID-19 Risk Prediction System")
