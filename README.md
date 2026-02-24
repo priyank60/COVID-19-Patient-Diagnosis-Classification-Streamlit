@@ -145,6 +145,9 @@ COVID-19-Patient-Diagnosis/
 
 The trained model is deployed using Streamlit for interactive predictions.
 
+🚀 Live Demo:
+https://covid-19-patient-diagnosis-classification-app-auwj7uy4cayhfra5.streamlit.app/
+
 ### ▶️ Run the App Locally
 
 ```bash
